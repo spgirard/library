@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Library</title>
+    <meta name="description" content="This is a personal library app." />
+    <meta name="author" content="Shawn Girard" />
+    <!-- CSS -->
+    <!-- Vendor CSS -->
+    <!-- https://github.com/necolas/normalize.css/ -->
+    <link rel="stylesheet" href="./assets/css/vendor/normalize.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JS -->
+    <!-- Vendor JavaScript -->
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/edb58dd1dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- https://github.com/Modernizr/Modernizr -->
+    <script src="./assets/js/vendor/modernizr-3.12.0.min.js"></script>
+    <!-- Site JS (deferred) -->
+    <script src="./assets/js/site.js" defer></script>
+  </head>
+  <body id="top">
+
+    <div class="site-container">
+
+      <!-- site header -->
+      <header class="site-header">
+        <a href="./">
+            <i class="fa-solid fa-book-open-reader"></i>
+            Personal Library            
+        </a>
+
+      </header>
+
+      <main class="site-main">
+        
+        <nav class="site-nav">
+            <a href="#">Add Book</a>
+            |
+            <a href="#">Add Book Data</a>
+        </nav>
+
+        <div class="book-content" id="bookContent">
+
+            <article class="book-card">
+                <div class="book-title">
+                    Book Title
+                </div>
+                <div class="book-row2">
+                    <span class="book-author">
+                        Book Author
+                    </span>
+                    <span class="book-pages">
+                        pages
+                    </span>                    
+                </div>
+                <div class="book-actions">
+                    <span class="read">
+                        read
+                    </span>
+                    <span class="delete">
+                        delete
+                    </span>
+                </div>
+            </article>
+
+        </div>
+      </main>
+
+      <!-- site footer -->
+      <footer class="site-footer">
+        <div class="foot-up">
+          <a href="#top"
+            ><i
+              id="arrow"
+              class="fa-regular fa-circle-up"
+              title="Back to top"
+            ></i
+          ></a>
+        </div>
+        <div class="footer-message">
+          Developed for, but unaffiliated with, the
+          <a href="https://www.theodinproject.com/" target="_blank"
+            >Odin Project</a
+          >.
+        </div>
+        <div class="footer-copy">
+          <i class="fa-regular fa-copyright" title="Copyright"></i> 2023 Shawn
+          Girard
+        </div>
+        <div class="foot-nav">
+          <a href="https://github.com/spgirard" target="_blank"
+            ><i class="fa-brands fa-github" title="Git"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/shawngirard/" target="_blank"
+            ><i class="fa-brands fa-linkedin" title="Linked In"></i
+          ></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

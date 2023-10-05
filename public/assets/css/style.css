@@ -1,0 +1,182 @@
+/* PROJECT STYLES */
+
+/* GOOGLE FONTS */
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* ROOT */
+
+:root {
+    /* http://paletton.com/#uid=31E0u0kllllaFw0g0qFqFg0w0aF */
+    /* yellow  */
+    --yellow1: #FFF7AA;
+    --yellow2: #D4CB6A;
+    --yellow3: #AAA039;
+    --yellow4: #807615;
+    --yellow5: #554D00;
+    /* red */
+    --red1: #A66FA6;
+    --red2: #8A458A;
+    --red3: #6E256E;
+    --red4: #530E53;
+    --red5: #370037;
+    /* blue */
+    --blue1: #8080B3;
+    --blue2: #565695;
+    --blue3: #343477;
+    --blue4: #1A1A59;
+    --blue5: #09093B;
+    /* fonts */
+    --sans: 'Open Sans', sans-serif;
+    --serif: 'PT Serif', serif;
+}
+
+/* BASE STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: var(--sans);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4
+h5,
+h6 {
+    font-family: var(--serif);
+}
+
+button {
+    border: 0;
+}
+
+/* PAGE STYLES */
+
+  .site-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+/* HEADER STYLES */
+
+  .site-header {
+    flex: 0 0 4rem;
+    background-color: var(--blue5);
+    color: var(--blue1);
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+
+  /* MAIN STYLES */
+
+  .site-main {
+    flex: 1;
+  }
+
+  .site-nav {
+    background-color: var(--yellow5);
+    color: var(--yellow1);
+    padding: .5rem;
+  }
+
+  .book-content {
+    margin: .5rem auto;
+    gap: .75rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 20rem);
+  }
+
+  .book-card {
+    background-color: var(--red1);
+    margin: 0;
+    padding: .5rem;
+    color: var(--red5);
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem .5rem var(--red3);
+  }
+
+  .book-title {
+    font-size: 1.25rem;
+  }
+
+  .book-row2 {
+    margin: 0;
+    padding: .25rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .75rem;
+  }
+
+  .book-row3 {
+    margin: 0;
+    padding: .25rem;
+    font-style: italic;
+    font-size: .75rem;
+  }
+
+  .book-actions {
+    display: flex;
+    justify-content: space-around;
+    font-size: .75rem;
+  }
+
+  .book-actions button {
+    margin: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--red3);
+    color: var(--red1);
+  }
+
+
+/* FOOTER STYLES */
+
+.site-footer {
+    flex: 0 0 6rem;
+    padding: 1rem;
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    background-color: var(--yellow1);
+    color: var(--yellow5);
+}
+
+.foot-up {
+    font-size: 1rem;
+}
+
+.foot-nav {
+    font-size: 1rem;
+}
+
